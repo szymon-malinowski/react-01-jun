@@ -12,7 +12,7 @@ export default function ProductCard({
 
   const [isFavorite, setIsFavorite] = useState(false);
 
-  const [inStock, setInStock];
+  const [inStock, setInStock] = useState(true);
 
   function add() {
     setQuantity((prev) => (prev < initialStock ? prev + 1 : prev));
